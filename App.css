@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Fascinate&display=swap');
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    background: url("./assets/tree.png") no-repeat center center fixed;
+    background-size: 750px;
+    gap: 50px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 50px 10px;
+    align-items: start;
+    height: 100%;
+    transition: height 0.3s cubic-bezier(0.84, 0.29, 1, 1);
+}
+
+.container button {
+    padding: 10px 20px;
+    background-color: tomato;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    width: 200px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+
+}
+
+button {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    margin: 10px 5px;
+}
+
+.container button:hover {
+    background: #ff4757;
+}
+
+a {
+    color: #f2f2f2;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 95%;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding-top: 50px;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .header p {
+        font-size: 30px;
+    }
+
+    .header-title img {
+        width: 40px;
+        margin-top: -15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 5px;
+        grid-template-columns: auto;
+        padding-top: 20px;
+    }
+
+    .header p {
+        font-size: 24px;
+    }
+
+    .header-title img {
+        width: 30px;
+        margin-top: -10px;
+    }
+}

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Fascinate&display=swap');
+
+.header {
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1px 90px;
+    background-color: #f9f6ed;
+    box-shadow: 0 0px 8px #faddbe;
+}
+
+.header-logo img {
+    width: 250px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.header p {
+    color: #6a5524;
+    font-family: "Fascinate", system-ui;
+    font-size: 40px;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+.header .header-text {
+    color: #6a5524;
+    font-family: "Carattere", cursive;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+}
+
+.header .header-text .family-text {
+    font-family: "Carattere", cursive;
+    color: wheat !important;
+    margin: 0 !important;
+    background-color: #6a5524 !important;
+    padding: 0px 10px !important;
+    width: fit-content !important;
+    border-radius: 50px 5px !important;
+    ;
+}
+
+.header-button button {
+    padding: 10px 20px;
+    background-color: tomato;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    width: 200px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.header-button button:hover {
+    background: #ff4757;
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        padding: 10px 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        align-items: center;
+    }
+
+    .header-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-title {
+        margin-bottom: 10px;
+    }
+
+    .header .header-text {
+        margin-top: -10px;
+        font-size: 12px;
+        padding-left: 0;
+    }
+
+    .header-button {
+        margin-top: 10px;
+    }
+
+    .header .header-title p {
+        font-size: 30px;
+    }
+
+    .header .header-title img {
+        width: 40px;
+        margin-top: -15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 5px 10px;
+        align-items: center;
+    }
+
+    .header .header p {
+        font-size: 24px;
+    }
+
+    .header .header-title img {
+        width: 30px;
+        margin-top: -10px;
+    }
+
+    .header .header-button {
+        margin-top: 0;
+        max-width: 100px;
+    }
+}

@@ -1,0 +1,45 @@
+.update-member-form {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.update-member-form .heading {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    color: #6a5524;
+    text-align: center;
+}
+
+.update-member-form form {
+    width: 450px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.update-member-form input,
+select {
+    outline: none;
+}
+
+.update-member-form form button {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    margin: 10px 5px;
+}
+
+.cancel-btn {   
+    background-color: tomato !important;
+}
+
+.cancel-btn:hover {
+    background-color: rgb(218, 82, 58) !important;
+    color: #f1f1f1 !important;
+}
